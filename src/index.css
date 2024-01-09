@@ -1,0 +1,145 @@
+:root {
+  /*Variables*/
+  /* Primary */
+
+  --light-red: hsl(356, 100%, 66%); /* (CTA text) */
+  --Very-light-red: hsl(355, 100%, 74%); /*(CTA hover background) */
+  --headings: hsl(208, 49%, 24%); /*(headings) */
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%); /*(text) */
+  --Grayish-blue: hsl(240, 2%, 79%); /* (footer text) */
+  --Very-dark-grayish-blue: hsl(207, 13%, 34%); /* (body copy) */
+  --Very-dark-black-blue: hsl(240, 10%, 16%); /* (footer background) */
+
+  /*  Gradient */
+
+  /* Background gradient - Intro/CTA mobile nav: */
+  --background-gradient: linear-gradient(
+    120deg,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+
+  /* Background gradient - body:*/
+  --state: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  /* --Very-dark-gray-blue: hsl(237, 17%, 21%);
+--Very-dark-desaturated-blue: hsl(237, 23%, 32%); */
+}
+*/ img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--headings);
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.btn-light {
+  color: var(--light-red);
+  font-weight: bold;
+}
+body {
+  font-family: "Overpass", Sans-serif;
+  overflow-x: hidden;
+}
+/*navbar*/
+.navbar {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translatex(-50%);
+  padding: 50px 0;
+  background-color: var(--white);
+  width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px (0, 0, 0, 0.15);
+}
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul li {
+  margin: 10px 0;
+}
+.state .state-img {
+  width: 500px;
+}
+/* Showcase */
+.showcase {
+  background-image: var(--background-gradient);
+  height: 400px;
+  border-bottom-left-radius: 100px;
+}
+.showcase .overlay {
+  background: url("./images/bg-pattern-intro-desktop.svg") no-repeat
+    center/cover;
+
+  min-height: 400px;
+}
+/*State od the Art*/
+.state {
+  background-image: var(--state);
+  border-radius: 0 100px 0 100px;
+  margin: 100px 0 50px;
+}
+.state .state-img {
+  position: absolute;
+  top: -20%;
+  height: 500px;
+  width: 50%;
+}
+/*Footer*/
+.footer {
+  background-color: var(--Very-dark-black-blue);
+  color: var(--Grayish-blue);
+  border-top-right-radius: 100px;
+}
+.footer h4 {
+  color: var(--Grayish-blue);
+}
+@media (min-width: 768px) {
+  .navbar {
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    width: 768;
+    padding: 0;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    transform: translateX(0%);
+  }
+  .navbar ul li {
+    color: var(--white);
+    margin: 0 10px;
+  }
+}
+.navbar ul {
+  flex-direction: row;
+}
+
+@media (min-width: 1024px) {
+  .showcase,
+  .showcase.overlay {
+    height: 600px;
+  }
+}
