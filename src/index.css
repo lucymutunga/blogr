@@ -84,8 +84,9 @@ body {
 }
 /* Showcase */
 .showcase {
+  position: relative;
   background-image: var(--background-gradient);
-  height: 400px;
+  height: 300px;
   border-bottom-left-radius: 100px;
 }
 .showcase .overlay {
@@ -104,7 +105,7 @@ body {
   position: absolute;
   top: -20%;
   height: 500px;
-  width: 50%;
+  width: auto;
 }
 /*Footer*/
 .footer {

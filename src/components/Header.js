@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <header ClassName="absolute p-5 flex items-center justify-between w-full">
+      <header ClassName="absolute p-5 flex items-center justify-between w-full ">
         <div className="md:mr-5">
           <img src={logo} alt="blogr logo" />
         </div>
