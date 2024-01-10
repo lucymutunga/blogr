@@ -16,14 +16,14 @@ const Header = () => {
   }, []);
   return (
     <>
-      <header ClassName="absolute p-5 flex items-center justify-between w-full ">
-        <div className="md:mr-5">
-          <img src={logo} alt="blogr logo" />
-        </div>
+      <header ClassName="absolute p-5 flex items-center justify-between w-full mt-12">
         {/*Links */}
         {isOpen && (
-          <nav className="navbar md:flex md:justify-between">
-            <ul>
+          <nav className="navbar md:flex md:justify-between text-white ml-1 mt-12">
+            <div className="md:mr-5  md:ml-5 lg:ml-28 ">
+              <img src={logo} alt="blogr logo" className="mt-8" />
+            </div>
+            <ul className="lg:ml-0 mt-12 ">
               {navLinks.map(({ id, title, links }) => (
                 <li key={id}>{title}</li>
               ))}
