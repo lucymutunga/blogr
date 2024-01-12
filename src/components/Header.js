@@ -20,7 +20,7 @@ const Header = () => {
         {/*Links */}
         {isOpen && (
           <nav className="navbar md:flex md:justify-between text-white ml-1 mt-0">
-            <div className="md:mr-5  md:ml-5 lg:ml-28 ">
+            <div className="md:mr-5 flex flex-row md:hidden  md:ml-5 lg:ml-28 md:mt:0">
               <img src={logo} alt="blogr logo" className="mt-12 " />
             </div>
             <ul className="lg:ml-0 mt-12 ">
