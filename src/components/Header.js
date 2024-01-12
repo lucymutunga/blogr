@@ -19,9 +19,9 @@ const Header = () => {
       <header ClassName="absolute p-5 flex items-center justify-between w-full mt-12">
         {/*Links */}
         {isOpen && (
-          <nav className="navbar md:flex md:justify-between text-white ml-1 mt-12">
+          <nav className="navbar md:flex md:justify-between text-white ml-1 mt-0">
             <div className="md:mr-5  md:ml-5 lg:ml-28 ">
-              <img src={logo} alt="blogr logo" className="mt-8" />
+              <img src={logo} alt="blogr logo" className="mt-12 " />
             </div>
             <ul className="lg:ml-0 mt-12 ">
               {navLinks.map(({ id, title, links }) => (

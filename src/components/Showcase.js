@@ -6,7 +6,7 @@ const Showcase = () => {
     <>
       <section className="showcase relative ">
         <Header />
-        <div className=" relative overlay px-5 flex flex-col items-center justify-center text-center">
+        <div className=" overlay px-5 flex flex-col items-center justify-center text-center ">
           <h1 className="font-bold text-4xl text-white mb-5 md:text-5xl xl:text-6xl 2xl:text-7xl">
             A modern publishing platform
           </h1>

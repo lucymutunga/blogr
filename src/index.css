@@ -133,14 +133,20 @@ body {
     color: var(--white);
     margin: 0 10px;
   }
-}
-.navbar ul {
-  flex-direction: row;
+
+  .navbar ul {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px) {
   .showcase,
   .showcase.overlay {
     height: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .showcase .overlay {
+    min-height: 200px;
   }
 }
